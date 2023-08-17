@@ -14,4 +14,23 @@ module.exports = {
     v2_normalizeFormMethod: true,
     v2_routeConvention: true,
   },
+  serverDependenciesToBundle: [
+    "@mdxeditor/editor",
+    "react-diff-view",
+    /^mdast.*/,
+    /^micromark.*/,
+    /^zwitch.*/,
+    /^unist.*/,
+    /^estree-util-.*/,
+    /^character-.*/,
+    /^is-.*/,
+    "parse-entities",
+    "stringify-entities",
+    "markdown-table",
+    "decode-named-character-reference",
+    "fault",
+    "ccount",
+    "vfile-message",
+    "longest-streak"
+  ]
 };
