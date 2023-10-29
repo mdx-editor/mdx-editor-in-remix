@@ -1,28 +1,9 @@
 /** @type {import('@remix-run/dev').AppConfig} */
-module.exports = {
+export default {
   ignoredRouteFiles: ["**/.*"],
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "build/index.js",
   // publicPath: "/build/",
-  serverModuleFormat: "cjs",
-  serverDependenciesToBundle: [
-    "@mdxeditor/editor",
-    "react-diff-view",
-    /^mdast.*/,
-    /^micromark.*/,
-    /^zwitch.*/,
-    /^unist.*/,
-    /^estree-util-.*/,
-    /^character-.*/,
-    /^is-.*/,
-    "parse-entities",
-    "stringify-entities",
-    "markdown-table",
-    "decode-named-character-reference",
-    "fault",
-    "ccount",
-    "vfile-message",
-    "longest-streak",
-  ],
+  serverModuleFormat: "esm",
 };
